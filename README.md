@@ -120,7 +120,9 @@ top 명령어는 현재 OS의 상태를 나타내주는 CLI 어플리케이션�
 
 * ps 사용법
 
-> $ ps [option]
+> ```git
+>  $ ps [option]
+>  ```
 
 * ps 옵션
 
@@ -198,3 +200,22 @@ top 명령어는 현재 OS의 상태를 나타내주는 CLI 어플리케이션�
 ---
 
 ### 4. kill 명령어
+
+프로세스에 시그널을 보내는 명령어
+
+* kill 리스트 확인
+
+```git
+$ kill -l
+```
+
+* 주요 시그널
+
+||영어|설명|
+|:-----------:|:--------:|:------------------------------------------:|
+|1) SIGHUP|Hang Up|세션이 종료될 때 시스템이 내리는 시그널|
+|2) SIGINT|Interrupt|Ctrl + C, 종료 요청 시그널|
+|9) SIGKILL|Kill|강제 종료 시그널|
+|11) SIGSEGV|Segment Violation|메모리 침범이 일어날 때 시스템이 보내는 시그널|
+|15) SIGTERM|Terminate|기본 값, 종료 요청 시그널|
+|20) SIGTSTP|Temporary Stop|Ctrl + Z 일시 중지 요청 시그널|
